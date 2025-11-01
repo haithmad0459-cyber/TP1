@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo06 - Formulaire HTML</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+                <legend> <h1>CRER UN COMPTE</h1></legend>
+            <fieldset>
+                <legend><h4>identite</h4></legend>
+                <label>nom et prenom: <input type="text" name="nom_prenom" placeholder="jamal semfaoui" required></label>
+                <label>date de naissance: <input type="date" name="date" min="1900"max=23-10-2025 required></label>
+            </fieldset>
+             <fieldset>
+                <legend><h4>contact</h4></legend>
+                <label>telephone: <input type="tel" name="telephone" pathern="^0[5-7]\d{8}$," placeholder="ex:0710387843" required></label>
+                <label>site personnel: <input type="url" name="site" placeholder="https://site personnel.com"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Sécurité</legend>
+
+                   <label for="password">Mot de passe :</label>
+                   <input type="password" id="password" name="password"  minlength="8" required placeholder="Au moins 8 caractères"><br><br>
+                   <label for="confirm_password">Confirmer le mot de passe :</label>
+                   <input type="password" id="confirm_password" name="confirm_password" minlength="8" required><br><br>
+            </fieldset>
+           <fieldset>
+                    <legend>Préférences</legend>
+                 <label><input type="checkbox" name="newsletter" value="oui">Je souhaite recevoir la newsletter</label><br><br>
+                 <p>Rôle :</p>
+                 <label><input type="radio" name="role" value="etudiant" required> Étudiant</label><br>
+                 <label><input type="radio" name="role" value="pro"> Professionnel</label>
+                </fieldset>
+        </fieldset>
+    </form>
+</body>

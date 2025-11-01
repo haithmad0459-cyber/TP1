@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 09 - Accessibilité et médias</title>
+</head>
+
+<body>
+
+  <!-- Lien d'accès rapide -->
+  <a href="#main">Aller au contenu</a>
+
+  <!-- En-tête -->
+  <header>
+    <h1>Découverte des Médias en HTML5</h1>
+    <nav>
+      <a href="#accueil">Accueil</a> |
+      <a href="#galerie">Galerie</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contenu principal -->
+  <main id="main">
+    <h2>Image illustrative</h2>
+
+    <!-- Figure + figcaption -->
+    <figure>
+      <img src="https://media.istockphoto.com/id/591441250/fr/photo/paysage-de-montagne.jpg?s=612x612&w=0&k=20&c=nyDsuzgn_iTmTYrlJxUUvqhWK9m4ZM-j_l7Ft_IA6AA=" alt="Un beau paysage de montagne au lever du soleil" width="400">
+      <figcaption>Paysage de montagne au lever du soleil</figcaption>
+    </figure>
+
+    <h2>Extrait audio</h2>
+
+    <!-- Audio (avec alternative si indisponible) -->
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+      Audio non disponible
+    </audio>
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2025 - Exemple HTML5 - Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
